@@ -1,6 +1,7 @@
 # Functions, Arrays, Objects
 
 - The point of these assignments is to take your knowledge of JavaScript and start putting into practice the principles learned throughout Day One.
+<!-- "made a change" -->
 
 ## Set Up The Project With Git
 

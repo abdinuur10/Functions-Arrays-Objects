@@ -3,7 +3,7 @@
 // ==== Challenge 1: Writing Objects ==== 
 // HR needs some information on the new interns put into a database.  Given an id, email, first name, and gender. Create an object for each person in the company list:
 
-// 1, mmelloy0@psu.edu, Mitzi, F
+// 1, mmelloy0@psu.edu, Mitzi, 
 // 2, kdiben1@tinypic.com, Kennan, M
 // 3, kmummery2@wikimedia.org, Keven, M
 // 4, gmartinson3@illinois.edu, Gannie, M
@@ -32,6 +32,14 @@ const example = {
   // Gannie's name
   
   // Antonietta's Gender
+
+  const employee = {
+    name: 'Mitzi',
+    Id: 'Kennan',
+    email: 'Kevensemail',
+    gender: 'F'
+  }
+  console.log(employee)
   
   // ==== Challenge 3: Object Methods ==== 
   // Give Kennan the ability to say "Hello, my name is Kennan!" Use the console.log provided as a hint.
@@ -49,10 +57,31 @@ const example = {
   // 3. Nest a grandchild object in the child object with properties for name and age.  The name will be Sam and the age will be 30
   // 4. Give each of the objects the ability to speak their names using the this keyword.
   
-  const parent = {}
+  const parent = {
+    name:'Susan',
+    age:'70',
+    child: {
+      name: "Goerge",
+      age: "50",
+      grandchild:{
+        name: "Susan",
+        age:"30"
+      }
+      
+    },
+    profile: function(){
+      return `Hi, My name is ${this.name}`
+    }
+
+    }
+      console.log(parent.profile())
+      console.log(parent.child.name.age)
+      console.log(parent.grandchild.name.age)
+
+    
   
   // Log the parent object's name
-  
+
   // Log the child's age
   
   // Log the name and age of the grandchild
@@ -62,3 +91,4 @@ const example = {
   // Have the child speak
   
   // Have the grandchild speak
+  
