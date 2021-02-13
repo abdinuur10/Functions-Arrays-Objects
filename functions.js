@@ -8,11 +8,10 @@ Do the following:
    3. Multiply a and b and return the answer
 */
 
-function multiply(/*add your code here*/){
-    /*add your code here*/
-  }
-
-
+function multiply(num1, num2){
+  return num1*num2;
+}
+console.log(multiply(20,5))
 /*
 
 
@@ -25,8 +24,9 @@ Do the following:
    3. Return the newly calculated age
 */
 
-function catYears(/*add your code here*/){
-    /*add your code here*/
+function catYears(age) {
+  let catYears = 7*age;
+  console.log("Your cattie is" + catYears + "years old in cat years!")
 }
 
 
@@ -62,6 +62,10 @@ let add = function (param1, param2) {
 add(1,2);
 
 */
+const addition = function(param1,param2){
+  return param1 + param2;
+}
+console.log(addition(56,42))
 
 
 
